@@ -32,7 +32,7 @@ local citrixAppWatcher = function(name, event, application)
 
   elseif (name == 'Citrix Viewer') and (obj.citrixPid == nil)
   then
-    citrixStarted(application.pid())
+    citrixStarted(application:pid())
   end
 end
 
